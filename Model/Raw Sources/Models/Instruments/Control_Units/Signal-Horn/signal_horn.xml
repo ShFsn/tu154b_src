@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<!-- Button for "Intermittent signal control" (?) -->
+
+<PropertyList>
+
+<model>
+ <path>rc_btn_signal.xml</path>
+  <offsets>
+    <x-m>2.5042</x-m>
+    <y-m>0.992</y-m>
+    <z-m>0.7442</z-m>
+    <pitch-deg>90</pitch-deg>
+    <heading-deg>279.5</heading-deg>
+  </offsets>
+</model>
+
+</PropertyList>

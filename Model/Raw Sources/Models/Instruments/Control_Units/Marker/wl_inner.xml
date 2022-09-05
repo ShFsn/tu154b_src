@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<!-- Inner marker -->
+
+<PropertyList>
+ <path>../../../shared/lamps/sltsn.ac</path>
+
+<animation>
+ <type>material</type>
+ <object-name>holder</object-name>
+ <object-name>lampon</object-name>
+ <texture>../../../shared/lamps/sltsnwhite.png</texture>
+</animation>
+
+<animation>
+ <type>select</type>
+ <condition>
+  <and>
+   <greater-than>
+    <property>an24/Electrics/AZSmain_V</property>
+    <value>24.0</value>
+   </greater-than>
+   <equals>
+    <property>an24/AZS/sw0517</property>
+    <value>1.0</value>
+   </equals>
+   <greater-than>
+    <property>an24/Kurs-MP/markermode</property>
+    <value>0</value>
+   </greater-than>
+   <equals>
+    <property>instrumentation/marker-beacon/inner</property>
+    <value>true</value>
+   </equals>
+  </and>
+ </condition>
+ <object-name>lampon</object-name>
+</animation>
+
+</PropertyList>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<!-- Indicates GTD-16 gas-turbine running -->
+
+<PropertyList>
+ <path>../../../shared/lamps/sltsn.ac</path>
+
+<animation>
+ <type>material</type>
+ <object-name>holder</object-name>
+ <object-name>lampon</object-name>
+ <texture>../../../shared/lamps/sltsngreenplain.png</texture>
+</animation>
+
+<animation>
+  <type>select</type>
+  <condition>
+   <greater-than>
+    <property>an24/Electrics/AZSmain_V</property>
+    <value>24.0</value>
+   </greater-than>
+   <greater-than>
+    <property>engines/engine[2]/n2</property>
+    <value>60</value>
+   </greater-than>
+  </condition>
+  <object-name>lampon</object-name>
+</animation>
+
+</PropertyList>
