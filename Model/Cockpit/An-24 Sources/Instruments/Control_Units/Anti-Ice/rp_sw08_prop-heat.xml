@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+
+<!-- Prop anti-ice Normal/OFF/Emergency; sw 832 -->
+<PropertyList>
+ <path>../../../shared/switches/3ppng-15k.ac</path>
+
+ <animation>
+  <type>pick</type>
+  <object-name>clickspot_up</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>nasal</command>
+      <script>
+	if ( getprop("an24/Anti-Ice/propheat") == 0.0 ) {
+	settimer(func {interpolate("an24/Anti-Ice/propheat", 1.0, 0.1);}, 0.4);
+	settimer(func {sound.click("azr", 2.1, 0.85, 0.65)}, 0.4);
+	interpolate("an24/Anti-Ice/propheat-lock", 1.0, 0.3 );
+	}
+	else if ( getprop("an24/Anti-Ice/propheat") == -1.0 ) {
+	interpolate("an24/Anti-Ice/propheat", 0.0, 0.1, 0.0, 1.1, 1.0, 0,1 );
+	settimer(func {interpolate("an24/Anti-Ice/propheat-lock", 0.0, 0.3, 0.0, 0.2, 1.0, 0.3);}, 0.2);
+	settimer(func {sound.click("azr", 2.1, 0.85, 0.65)}, 0.8);
+	}
+      </script>
+    </binding>
+  </action>
+   <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>propice_on</tooltip-id>
+      <label>Propeller Anti-Ice
+  System Normal</label>
+    </binding>
+   </hovered>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>clickspot_middle</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>nasal</command>
+      <script>
+	interpolate("an24/Anti-Ice/propheat", 0.0, 0.1 );
+	settimer(func {interpolate("an24/Anti-Ice/propheat-lock", 0.0, 0.3);}, 0.2);
+	sound.click("azr", 2.1, 0.85, 0.65);
+      </script>
+    </binding>
+  </action>
+   <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>propice_off</tooltip-id>
+      <label> Propeller Anti-Ice
+   System OFF</label>
+    </binding>
+   </hovered>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <object-name>clickspot_down</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>nasal</command>
+      <script>
+	if ( getprop("an24/Anti-Ice/propheat") == 0.0 ) {
+	settimer(func {interpolate("an24/Anti-Ice/propheat", -1.0, 0.1);}, 0.4);
+	settimer(func {sound.click("azr", 2.1, 0.85, 0.65)}, 0.4);
+	interpolate("an24/Anti-Ice/propheat-lock", -1.0, 0.3 );
+	}
+	else if ( getprop("an24/Anti-Ice/propheat") == 1.0 ) {
+	interpolate("an24/Anti-Ice/propheat", 0.0, 0.1, 0.0, 1.1, -1.0, 0,1 );
+	settimer(func {interpolate("an24/Anti-Ice/propheat-lock", 0.0, 0.3, 0.0, 0.2, -1.0, 0.3);}, 0.2);
+	settimer(func {sound.click("azr", 2.1, 0.85, 0.65)}, 0.8);
+	}
+      </script>
+    </binding>
+  </action>
+   <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>propice_emerg</tooltip-id>
+      <label> Propeller Anti-Ice
+Emergency System</label>
+    </binding>
+   </hovered>
+ </animation>
+
+ <animation>
+   <type>rotate</type>
+   <object-name>lever</object-name>
+   <property>an24/Anti-Ice/propheat</property>
+  <interpolation>
+    <entry><ind>-1.0</ind>	<dep>-25.0</dep></entry>
+    <entry><ind>1.0</ind>	<dep>25.0</dep></entry>
+  </interpolation>
+  <axis>
+    <x>0.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+  </axis>
+ </animation>
+
+</PropertyList>

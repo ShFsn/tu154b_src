@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<!-- Rear cargo door open -->
+<PropertyList>
+ <path>../../../shared/lamps/warninglamp02.ac</path>
+
+<animation>
+ <type>material</type>
+ <object-name>holder</object-name>
+ <object-name>lampon</object-name>
+ <texture>../../../shared/lamps/warninglamp02green.png</texture>
+</animation>
+
+<animation>
+ <type>select</type>
+ <condition>
+  <and>
+   <greater-than>
+    <property>an24/Electrics/AZSmain_V</property>
+    <value>20.0</value>
+   </greater-than>
+   <greater-than>
+    <property>an24/doorshatches/test</property>
+    <value>0.8</value>
+   </greater-than>
+  </and>
+  </condition>
+ <object-name>lampon</object-name>
+</animation>
+
+</PropertyList>

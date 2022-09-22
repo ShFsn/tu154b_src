@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<!-- Inlet guide vanes anti-ice heat valve open (book "FZH", pp. 125/126, change 5) -->
+
+<PropertyList>
+ <path>../../../shared/lamps/sltsn.ac</path>
+
+<animation>
+ <type>material</type>
+ <object-name>holder</object-name>
+ <object-name>lampon</object-name>
+ <texture>../../../shared/lamps/sltsngreen.png</texture>
+</animation>
+
+<animation>
+ <type>select</type>
+ <object-name>lampon</object-name>
+ <condition>
+  <and>
+   <greater-than>
+    <property>an24/Electrics/AZSmain_V</property>
+    <value>24</value>
+   </greater-than>
+   <greater-than>
+    <property>an24/BleedAir/vna_valveR</property>
+    <value>0.8</value>
+   </greater-than>
+  </and>
+  </condition>
+</animation>
+
+</PropertyList>
