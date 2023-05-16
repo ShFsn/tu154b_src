@@ -12,8 +12,9 @@
 # --alpha-remove specifies whether alpha channel will be removed or not
 #             (redusing resulting DDS size).
 # --flip specifies whether image will be flipped from up to down.
-# --flip-normals specifies whether normal vector will be flipped as well
+# --normalmap specifies whether the image is normalmap
 #             (should be used for normal maps instead of --flip).
+# --nvcompress nvcompress will be used if available.
 #
 # All-options example: 
 # `./fg_dds_converter.sh --dir ../Models/Fuselage/ --no-replace --png-remove --alpha-remove --no-flip`
@@ -26,7 +27,8 @@ replace=true;
 png_remove=false;
 alpha_remove=false;
 flip=false;
-flip_normals=false;
+normalmap=false;
+use_nvcompress=false;
 #[[ -n "$1" ]] && root="$1"
 while [ -n "$1" ]; do
     case "$1" in
@@ -35,7 +37,8 @@ while [ -n "$1" ]; do
     --png-remove) png_remove=true;;
     --alpha-remove) alpha_remove=true;;
     --flip) flip=true;;
-    --flip-normals) flip=true; flip_normals=true;;
+    --normalmap) alpha_remove=true; normalmap=true;;
+    --nvcompress) use_nvcompress=true;;
     *);;
     esac;
     shift;
@@ -48,24 +51,30 @@ Parameters:
         ${replace}
     Remove PNG (--png-remove):
         ${png_remove}
-    Remove alpha channel (--alpha-remove):
+    Remove alpha channel (--alpha-remove / forced with --normalmap):
         ${alpha_remove}
-    Flip DDS up-down (--flip / forced with --flip-normals):
+    Flip DDS up-down (--flip):
         ${flip}
-    Flip normalmap (--flip-normals):
-        ${flip_normals}";
+    Treat as normalmap (--normalmap):
+        ${normalmap}
+    Use nvcompress (--nvcompress):
+        ${use_nvcompress}";
 
 # Check if NVIDIA texture tools is installed
+echo "
+";
 command -v nvcompress >/dev/null
 if [[ $? -gt 0 ]]; then
-    echo "
-nvcompress not available, using imagemagick";
-    nvcompress_available=false;
+    echo "nvcompress not available";
+    use_nvcompress=false;
 else
-    echo "
-nvcompress available, using nvcompress";
-    nvcompress_available=true;
-fi
+    echo "nvcompress available";
+fi;
+if $use_nvcompress; then
+    echo "Using nvcompress";
+else
+    echo "Using imagemagick";
+fi;
 
 # Search PNGs
 find $root -name '*.png' | while IFS= read file; do
@@ -89,46 +98,46 @@ Found PNG $file: ";
 
     if $no_skip; then
         # Create temporary file
-        convert $file "${dir}/${name}.tmp";
+        convert $file "${dir}/${name}.tga";
 
         # Removing alpha
         if $alpha_remove; then
             echo "Removing alpha channel...";
-            convert -background black -alpha remove "${dir}/${name}.tmp" "${dir}/${name}.tmp";
-            #convert -background black -alpha remove "${dir}/${name}.tmp" "${dir}/${name}1.png";
+            convert -background black -alpha remove "${dir}/${name}.tga" "${dir}/${name}.tga";
         fi;
 
         #Flip
         if $flip; then
             echo "Flipping image..."
-            convert -flip "${dir}/${name}.tmp" "${dir}/${name}.tmp";
+            convert -flip "${dir}/${name}.tga" "${dir}/${name}.tga";
 
             # Convert normal vectors
-            if $flip_normals; then
+            if $normalmap; then
                 echo "Flipping normals...";
-                mogrify -channel red -negate +channel -channel green -negate +channel "${dir}/${name}.tmp";
+                mogrify -channel red -negate +channel -channel green -negate +channel "${dir}/${name}.tga";
             fi;
         fi;
 
         # Convert to DDS
         echo "Converting to DDS (${dir}/${name}.dds)...";
-        if $nvcompress_available; then
+        if $use_nvcompress; then
+            convert -flip "${dir}/${name}.tga" "${dir}/${name}.tga"; # counteract nvcompress flip
             if $normalmap; then
-                nvcompress -normal -bc5 "${dir}/${name}.tmp" "${dir}/${name}.tmp";
+                nvcompress -normal -bc1n "${dir}/${name}.tga" "${dir}/${name}.tga";
             elif $alpha_remove; then
-                nvcompress -color -bc1 "${dir}/${name}.tmp" "${dir}/${name}.tmp";
+                nvcompress -color -bc1 "${dir}/${name}.tga" "${dir}/${name}.tga";
             else 
-                nvcompress -alpha -bc3 "${dir}/${name}.tmp" "${dir}/${name}.tmp";
+                nvcompress -alpha -bc3 "${dir}/${name}.tga" "${dir}/${name}.tga";
             fi;
-            #nvcompress -bc1a "${dir}/${name}.tmp" "${dir}/${name}.tmp";
+            #nvcompress -bc1a "${dir}/${name}.tga" "${dir}/${name}.tga";
         else
             if $alpha_remove; then
-                convert "${dir}/${name}.tmp" -define dds:compression=DXT1 dxt1:${dir}/${name}.tmp;
+                convert "${dir}/${name}.tga" -define dds:compression=DXT1 dxt1:${dir}/${name}.tga;
             else
-                convert "${dir}/${name}.tmp" -define dds:compression=DXT5 dxt5:${dir}/${name}.tmp;
+                convert "${dir}/${name}.tga" -define dds:compression=DXT5 dxt5:${dir}/${name}.tga;
             fi;
         fi;
-        mv "${dir}/${name}.tmp" "${dir}/${name}.dds";
+        mv "${dir}/${name}.tga" "${dir}/${name}.dds";
 
         # Remove PNG
         if $png_remove; then
