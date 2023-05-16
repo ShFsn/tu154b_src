@@ -98,7 +98,7 @@ Found PNG $file: ";
 
     if $no_skip; then
         # Create temporary file
-        convert $file "${dir}/${name}.tga";
+        convert "${file}" "${dir}/${name}.tga";
 
         # Removing alpha
         if $alpha_remove; then
