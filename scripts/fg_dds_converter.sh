@@ -1,7 +1,6 @@
 #!/bin/bash
 #
-# Looks up all .png's and creates dds with imagemagick or nvcompress (if available) 
-#             from them, if not already done.
+# Looks up all PNGs and creates DDS with imagemagick or nvcompress (if available).
 #
 # All parameters are optional:
 # --dir [path] specifies the root directory to scan recursively.
