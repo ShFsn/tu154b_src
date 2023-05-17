@@ -16,7 +16,7 @@
 #             (should be used for normal maps instead of --flip).
 # --nvcompress nvcompress will be used if available.
 #
-# All-options example: 
+# All-options example:
 # `./fg_dds_converter.sh --dir ../Models/Fuselage/ --no-replace --png-remove --alpha-remove --flip --normalmap --nvcompress`
 #
 
