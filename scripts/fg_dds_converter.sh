@@ -14,6 +14,7 @@
 # --normalmap specifies whether the image is normalmap
 #             (should be used for normal maps instead of --flip).
 # --nvcompress nvcompress will be used if available.
+# --nvtt3 use if nvidia texture tools 3 is installed.
 #
 # All-options example:
 # `./fg_dds_converter.sh --dir ../Models/Fuselage/ --no-replace --png-remove --alpha-remove --flip --normalmap --nvcompress`
@@ -28,6 +29,7 @@ alpha_remove=false;
 flip=false;
 normalmap=false;
 use_nvcompress=false;
+nvtt3=false;
 #[[ -n "$1" ]] && root="$1"
 while [ -n "$1" ]; do
     case "$1" in
@@ -38,6 +40,7 @@ while [ -n "$1" ]; do
     --flip) flip=true;;
     --normalmap) alpha_remove=true; normalmap=true;;
     --nvcompress) use_nvcompress=true;;
+    --nvtt3) use_nvcompress=true; nvtt3=true;;
     *);;
     esac;
     shift;
@@ -56,8 +59,10 @@ Parameters:
         ${flip}
     Treat as normalmap (--normalmap):
         ${normalmap}
-    Use nvcompress (--nvcompress):
-        ${use_nvcompress}";
+    Use nvcompress (--nvcompress / forced with --nvtt3):
+        ${use_nvcompress}
+    NVTT v.3 (--nvtt3):
+        ${nvtt3}";
 
 # Check if NVIDIA texture tools is installed
 echo "
@@ -136,7 +141,13 @@ Found PNG $file: ";
                 convert "${dir}/${name}.tga" -define dds:compression=DXT5 dxt5:${dir}/${name}.tga;
             fi;
         fi;
-        mv "${dir}/${name}.tga" "${dir}/${name}.dds";
+
+        if $nvtt3; then
+            rm -f "${dir}/${name}.tga";
+            mv "${dir}/${name}_out.dds" "${dir}/${name}.dds";
+        else
+            mv "${dir}/${name}.tga" "${dir}/${name}.dds";
+        fi;
 
         # Remove PNG
         if $png_remove; then
