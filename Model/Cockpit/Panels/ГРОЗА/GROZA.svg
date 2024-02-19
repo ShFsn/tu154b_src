@@ -7,9 +7,9 @@
    viewBox="0 0 2048 1024"
    version="1.1"
    id="svg5"
-   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
    sodipodi:docname="GROZA.svg"
-   inkscape:export-filename="D:\Different documents\Programs\FG Aircrafts\SRC\tu154b_src\ГРОЗА\GROZA.png"
+   inkscape:export-filename="GROZA_raw_f.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -29,21 +29,24 @@
      showgrid="false"
      units="px"
      inkscape:zoom="0.31050684"
-     inkscape:cx="1040.2347"
-     inkscape:cy="494.35304"
+     inkscape:cx="1051.5066"
+     inkscape:cy="365.5314"
      inkscape:window-width="1920"
      inkscape:window-height="1001"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer5"
+     inkscape:showpageshadow="0"
+     inkscape:deskcolor="#d1d1d1" />
   <defs
      id="defs2" />
   <g
-     inkscape:label="Слой 1"
+     inkscape:label="base"
      inkscape:groupmode="layer"
      id="layer1"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <rect
        style="fill:#171717;fill-opacity:1;fill-rule:evenodd;stroke-width:1.1209"
        id="rect846"
@@ -95,13 +98,6 @@
        x="1024"
        y="512" />
     <rect
-       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.5"
-       id="rect1879"
-       width="32"
-       height="256"
-       x="1072"
-       y="512" />
-    <rect
        style="fill:#171717;fill-opacity:1;fill-rule:evenodd"
        id="rect2113"
        width="384"
@@ -109,28 +105,19 @@
        x="1152"
        y="512" />
     <rect
-       style="fill:#171717;fill-opacity:1;fill-rule:evenodd"
+       style="display:inline;fill:#171717;fill-opacity:1;fill-rule:evenodd"
        id="rect2335"
        width="384"
        height="128"
        x="1152"
        y="768" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:-10.12px;fill:#ffffff;fill-opacity:1"
-       x="1380.2725"
-       y="666.0946"
-       id="text15253"><tspan
-         sodipodi:role="line"
-         id="tspan15251"
-         x="1380.2725"
-         y="666.0946">откл</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="Слой 2"
-     style="display:none;opacity:0.398684">
+     inkscape:label="refs"
+     style="display:none;opacity:0.398684"
+     sodipodi:insensitive="true">
     <image
        width="864"
        height="900"
@@ -143,11 +130,17 @@
   <g
      inkscape:groupmode="layer"
      id="layer3"
-     inkscape:label="Слой 3">
+     inkscape:label="marks"
+     style="display:inline"
+     sodipodi:insensitive="true">
     <path
        style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:3.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
        d="M 217.9946,726.54948 H 207.388 l -34.594,59.91857"
        id="path54097" />
+    <path
+       style="display:inline;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:3.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       d="M 218.2556,864.27357 H 207.649 L 173.055,804.355"
+       id="path54097-0" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:3.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 217.9946,766.32424 -41.75034,24.10457"
@@ -158,7 +151,7 @@
        id="path55000" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:3.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 217.26805,826.43588 173.11161,800.94214"
+       d="M 217.26844,824.13574 173.112,798.642"
        id="path55431" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:3.70001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -168,6 +161,13 @@
        style="fill:none;stroke:#ffffff;stroke-width:3.70001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 744.93525,762.48977 h 19.26845 l 42.96953,24.80863"
        id="path56402" />
+    <rect
+       style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.5"
+       id="rect1879"
+       width="32"
+       height="256"
+       x="1072"
+       y="512" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:3.70001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 745.2888,795.37036 h 61.34123"
@@ -180,96 +180,6 @@
        style="fill:none;stroke:#ffffff;stroke-width:3.70001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 745.46558,853.35351 h 38.36046 l 25.94552,-44.93956"
        id="path57266" />
-    <text
-       xml:space="preserve"
-       style="font-size:24.9301px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;fill:#ffffff;fill-opacity:1;stroke-width:1.03875"
-       x="521.14362"
-       y="661.05896"
-       id="text9473"
-       transform="scale(1.038754,0.96269184)"
-       inkscape:export-filename="D:\GitHub\Tu-144D\Models\Tu-144D-cockpit\Instruments\GROZA\text9473.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96"><tspan
-         sodipodi:role="line"
-         id="tspan9471"
-         x="521.14362"
-         y="661.05896"
-         style="stroke-width:1.03875">Н</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:24.9301px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;fill:#ffffff;fill-opacity:1;stroke-width:1.03875"
-       x="531.3349"
-       y="681.30396"
-       id="text29923"
-       transform="scale(1.038754,0.96269184)"
-       inkscape:export-filename="D:\GitHub\Tu-144D\Models\Tu-144D-cockpit\Instruments\GROZA\text9473.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96"><tspan
-         sodipodi:role="line"
-         id="tspan29921"
-         x="531.3349"
-         y="681.30396"
-         style="stroke-width:1.03875">А</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:24.9301px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;fill:#ffffff;fill-opacity:1;stroke-width:1.03875"
-       x="536.61414"
-       y="704.39502"
-       id="text38539"
-       transform="scale(1.038754,0.96269184)"
-       inkscape:export-filename="D:\GitHub\Tu-144D\Models\Tu-144D-cockpit\Instruments\GROZA\text9473.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96"><tspan
-         sodipodi:role="line"
-         id="tspan38537"
-         x="536.61414"
-         y="704.39502"
-         style="stroke-width:1.03875">К</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:24.9301px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;fill:#ffffff;fill-opacity:1;stroke-width:1.03875"
-       x="533.8598"
-       y="725.37451"
-       id="text42957"
-       transform="scale(1.038754,0.96269184)"
-       inkscape:export-filename="D:\GitHub\Tu-144D\Models\Tu-144D-cockpit\Instruments\GROZA\text9473.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96"><tspan
-         sodipodi:role="line"
-         id="tspan42955"
-         x="533.8598"
-         y="725.37451"
-         style="stroke-width:1.03875">Л</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:24.9301px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;fill:#ffffff;fill-opacity:1;stroke-width:1.03875"
-       x="528.99365"
-       y="744.65546"
-       id="text48111"
-       transform="scale(1.038754,0.96269184)"
-       inkscape:export-filename="D:\GitHub\Tu-144D\Models\Tu-144D-cockpit\Instruments\GROZA\text9473.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96"><tspan
-         sodipodi:role="line"
-         id="tspan48109"
-         x="528.99365"
-         y="744.65546"
-         style="stroke-width:1.03875">О</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:24.9301px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;fill:#ffffff;fill-opacity:1;stroke-width:1.03875"
-       x="520.54681"
-       y="761.91644"
-       id="text51161"
-       transform="scale(1.038754,0.96269184)"
-       inkscape:export-filename="D:\GitHub\Tu-144D\Models\Tu-144D-cockpit\Instruments\GROZA\text9473.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96"><tspan
-         sodipodi:role="line"
-         id="tspan51159"
-         x="520.54681"
-         y="761.91644"
-         style="stroke-width:1.03875">Н</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:24.9301px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;fill:#ffffff;fill-opacity:1;stroke-width:1.03875"
@@ -464,89 +374,6 @@
        inkscape:export-ydpi="96" />
     <text
        xml:space="preserve"
-       style="font-size:26px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;fill:#ffffff;fill-opacity:1"
-       x="74"
-       y="669.34869"
-       id="text88331"><tspan
-         sodipodi:role="line"
-         id="tspan88329"
-         x="74"
-         y="669.34869">ЧАСТОТА</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:26px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:6.46px;fill:#ffffff;fill-opacity:1"
-       x="819.125"
-       y="669.29822"
-       id="text112695"><tspan
-         sodipodi:role="line"
-         id="tspan112693"
-         x="819.125"
-         y="669.29822">МЕТКИ</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:24px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;fill:#ffffff;fill-opacity:1"
-       x="554.39093"
-       y="791.44836"
-       id="text130321"
-       inkscape:export-filename="D:\GitHub\Tu-144D\Models\Tu-144D-cockpit\Instruments\GROZA\text130321.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96"><tspan
-         sodipodi:role="line"
-         id="tspan130319"
-         x="554.39093"
-         y="791.44836">КОНТРАСТ</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:24px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0.85px;fill:#ffffff;fill-opacity:1"
-       x="335.14981"
-       y="790.75"
-       id="text140479"><tspan
-         sodipodi:role="line"
-         id="tspan140477"
-         x="335.14981"
-         y="790.75">ЯРКОСТЬ</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:24px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;fill:#ffffff;fill-opacity:1"
-       x="233.62476"
-       y="735.4245"
-       id="text154477"><tspan
-         sodipodi:role="line"
-         id="tspan154475"
-         x="233.62476"
-         y="735.4245">ГОТОВ</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:24px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;fill:#ffffff;fill-opacity:1"
-       x="232.12476"
-       y="770.7995"
-       id="text158751"><tspan
-         sodipodi:role="line"
-         id="tspan158749"
-         x="232.12476"
-         y="770.7995">ЗЕМЛЯ</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:24px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;fill:#ffffff;fill-opacity:1"
-       x="232.87476"
-       y="802.5495"
-       id="text164759"><tspan
-         sodipodi:role="line"
-         id="tspan164757"
-         x="232.87476"
-         y="802.5495">МЕТЕО</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:24px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:-1.5px;fill:#ffffff;fill-opacity:1"
-       x="229.62476"
-       y="836.6745"
-       id="text170583"><tspan
-         sodipodi:role="line"
-         id="tspan170581"
-         x="229.62476"
-         y="836.6745">КОНТУР</tspan></text>
-    <text
-       xml:space="preserve"
        style="font-size:26px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;fill:#ffffff;fill-opacity:1;stroke-width:1"
        x="705.79034"
        y="746.08502"
@@ -605,6 +432,10 @@
        d="m 217.9946,726.54948 h 10.04734"
        id="path211849" />
     <path
+       style="display:inline;fill:none;stroke:#ffffff;stroke-width:3.7;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 217.135,864.24 h 10.04734"
+       id="path211849-1" />
+    <path
        style="fill:none;stroke:#ffffff;stroke-width:3.7;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 217.9946,766.32424 9.45923,-5.46129"
        id="path212115" />
@@ -614,8 +445,449 @@
        id="path212414" />
     <path
        style="fill:none;stroke:#ffffff;stroke-width:3.7;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 217.26805,826.43588 7.88542,4.55265"
+       d="m 218.168,824.636 7.88542,4.55265"
        id="path212680" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1264.6662,821.43923 22.1412,92.18799 23.0011,-92.85499"
+       id="path1"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1252.7572,853.25687 c 34.4436,-15.94086 67.7486,0.28466 67.7486,0.28466"
+       id="path2"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1252.8911,853.14144 10.4667,-6.03852"
+       id="path3"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1320.8244,853.64464 -9.561,-6.23979"
+       id="path4"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="display:inline;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1434.3939,818.8543 22.1412,92.18799 23.0011,-92.85499"
+       id="path1-6"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="display:inline;fill:none;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1422.4849,850.67194 c 34.4436,-15.94086 67.7486,0.28466 67.7486,0.28466"
+       id="path2-9"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="display:inline;fill:none;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1422.6188,850.55651 10.4667,-6.03852"
+       id="path3-4"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="display:inline;fill:none;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1490.5521,851.05971 -9.561,-6.23979"
+       id="path4-8"
+       sodipodi:nodetypes="cc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="text_en"
+     sodipodi:insensitive="true">
+    <text
+       xml:space="preserve"
+       style="font-size:24px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:-1.5px;display:inline;fill:#ffffff;fill-opacity:1"
+       x="233.02536"
+       y="836.67426"
+       id="text170583-5"><tspan
+         sodipodi:role="line"
+         id="tspan170581-1"
+         x="233.02536"
+         y="836.67426">CONTOUR</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:-1px;display:inline;fill:#ffffff;fill-opacity:1"
+       x="232.87497"
+       y="802.54926"
+       id="text164759-4"><tspan
+         sodipodi:role="line"
+         id="tspan164757-7"
+         x="232.87497"
+         y="802.54926"
+         style="letter-spacing:-1px">WEATHER</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1"
+       x="232.12497"
+       y="770.79926"
+       id="text158751-2"><tspan
+         sodipodi:role="line"
+         id="tspan158749-3"
+         x="232.12497"
+         y="770.79926">TERRAIN</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:-1.5px;display:inline;fill:#ffffff;fill-opacity:1"
+       x="233.62497"
+       y="735.42426"
+       id="text154477-9"><tspan
+         sodipodi:role="line"
+         id="tspan154475-4"
+         x="233.62497"
+         y="735.42426"
+         style="letter-spacing:-1.5px">STANDBY</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1"
+       x="233.29254"
+       y="869.19861"
+       id="text154477-2-3"><tspan
+         sodipodi:role="line"
+         id="tspan154475-0-6"
+         x="233.29254"
+         y="869.19861">DRIFT</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:-1.5px;display:inline;fill:#ffffff;fill-opacity:1"
+       x="330.25012"
+       y="790.74976"
+       id="text140479-4"><tspan
+         sodipodi:role="line"
+         id="tspan140477-3"
+         x="330.25012"
+         y="790.74976">BRIGHTNESS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1"
+       x="554.39117"
+       y="791.44812"
+       id="text130321-4"
+       inkscape:export-filename="D:\GitHub\Tu-144D\Models\Tu-144D-cockpit\Instruments\GROZA\text130321.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan130319-2"
+         x="554.39117"
+         y="791.44812">CONTRAST</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:26px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:5.61px;display:inline;fill:#ffffff;fill-opacity:1"
+       x="819.12524"
+       y="669.29797"
+       id="text112695-0"><tspan
+         sodipodi:role="line"
+         id="tspan112693-4"
+         x="819.12524"
+         y="669.29797"
+         style="letter-spacing:5.61px">MARKS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:26px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:-1.5px;display:inline;fill:#ffffff;fill-opacity:1"
+       x="69.400223"
+       y="669.34845"
+       id="text88331-2"><tspan
+         sodipodi:role="line"
+         id="tspan88329-3"
+         x="69.400223"
+         y="669.34845"
+         style="letter-spacing:-1.5px">FREQUENCY</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24.9301px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke-width:1.03875"
+       x="521.14386"
+       y="661.05865"
+       id="text9473-2"
+       transform="scale(1.038754,0.96269184)"
+       inkscape:export-filename="D:\GitHub\Tu-144D\Models\Tu-144D-cockpit\Instruments\GROZA\text9473.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan9471-1"
+         x="521.14386"
+         y="661.05865"
+         style="stroke-width:1.03875">P</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24.9301px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke-width:1.03875"
+       x="535.59821"
+       y="686.73987"
+       id="text29923-6"
+       transform="scale(1.038754,0.96269184)"
+       inkscape:export-filename="D:\GitHub\Tu-144D\Models\Tu-144D-cockpit\Instruments\GROZA\text9473.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan29921-6"
+         x="535.59821"
+         y="686.73987"
+         style="stroke-width:1.03875">I</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24.9301px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke-width:1.03875"
+       x="536.42059"
+       y="713.80353"
+       id="text38539-7"
+       transform="scale(1.038754,0.96269184)"
+       inkscape:export-filename="D:\GitHub\Tu-144D\Models\Tu-144D-cockpit\Instruments\GROZA\text9473.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan38537-2"
+         x="536.42059"
+         y="713.80353"
+         style="stroke-width:1.03875">T</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24.9301px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke-width:1.03875"
+       x="531.9223"
+       y="738.96466"
+       id="text42957-1"
+       transform="scale(1.038754,0.96269184)"
+       inkscape:export-filename="D:\GitHub\Tu-144D\Models\Tu-144D-cockpit\Instruments\GROZA\text9473.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan42955-3"
+         x="531.9223"
+         y="738.96466"
+         style="stroke-width:1.03875">C</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24.9301px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke-width:1.03875"
+       x="520.54706"
+       y="761.91614"
+       id="text51161-2"
+       transform="scale(1.038754,0.96269184)"
+       inkscape:export-filename="D:\GitHub\Tu-144D\Models\Tu-144D-cockpit\Instruments\GROZA\text9473.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan51159-4"
+         x="520.54706"
+         y="761.91614"
+         style="stroke-width:1.03875">H</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:5px;display:inline;fill:#ffffff;fill-opacity:1"
+       x="1388.973"
+       y="666.09436"
+       id="text15253-4"><tspan
+         sodipodi:role="line"
+         id="tspan15251-5"
+         x="1388.973"
+         y="666.09436"
+         dx="0"
+         style="letter-spacing:5px">off</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:5px;display:inline;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+       x="1242.767"
+       y="672.89734"
+       id="text15253-4-8"><tspan
+         sodipodi:role="line"
+         id="tspan15251-5-2"
+         x="1242.767"
+         y="672.89734"
+         style="letter-spacing:5px;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-dasharray:none;stroke-opacity:1">ON</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="text_ru"
+     style="display:inline;opacity:1"
+     sodipodi:insensitive="true">
+    <text
+       xml:space="preserve"
+       style="font-size:24px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:-1.5px;fill:#ffffff;fill-opacity:1"
+       x="233.02513"
+       y="836.6745"
+       id="text170583"><tspan
+         sodipodi:role="line"
+         id="tspan170581"
+         x="233.02513"
+         y="836.6745">КОНТУР</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;fill:#ffffff;fill-opacity:1"
+       x="232.87476"
+       y="802.5495"
+       id="text164759"><tspan
+         sodipodi:role="line"
+         id="tspan164757"
+         x="232.87476"
+         y="802.5495">МЕТЕО</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;fill:#ffffff;fill-opacity:1"
+       x="232.12476"
+       y="770.7995"
+       id="text158751"><tspan
+         sodipodi:role="line"
+         id="tspan158749"
+         x="232.12476"
+         y="770.7995">ЗЕМЛЯ</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;fill:#ffffff;fill-opacity:1"
+       x="233.62476"
+       y="735.4245"
+       id="text154477"><tspan
+         sodipodi:role="line"
+         id="tspan154475"
+         x="233.62476"
+         y="735.4245">ГОТОВ</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1"
+       x="233.29231"
+       y="869.19885"
+       id="text154477-2"><tspan
+         sodipodi:role="line"
+         id="tspan154475-0"
+         x="233.29231"
+         y="869.19885">СНОС</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0.85px;fill:#ffffff;fill-opacity:1"
+       x="335.14981"
+       y="790.75"
+       id="text140479"><tspan
+         sodipodi:role="line"
+         id="tspan140477"
+         x="335.14981"
+         y="790.75">ЯРКОСТЬ</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;fill:#ffffff;fill-opacity:1"
+       x="554.39093"
+       y="791.44836"
+       id="text130321"
+       inkscape:export-filename="D:\GitHub\Tu-144D\Models\Tu-144D-cockpit\Instruments\GROZA\text130321.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan130319"
+         x="554.39093"
+         y="791.44836">КОНТРАСТ</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:26px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:6.46px;fill:#ffffff;fill-opacity:1"
+       x="819.125"
+       y="669.29822"
+       id="text112695"><tspan
+         sodipodi:role="line"
+         id="tspan112693"
+         x="819.125"
+         y="669.29822">МЕТКИ</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:26px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;fill:#ffffff;fill-opacity:1"
+       x="74"
+       y="669.34869"
+       id="text88331"><tspan
+         sodipodi:role="line"
+         id="tspan88329"
+         x="74"
+         y="669.34869">ЧАСТОТА</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24.9301px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;fill:#ffffff;fill-opacity:1;stroke-width:1.03875"
+       x="521.14362"
+       y="661.05896"
+       id="text9473"
+       transform="scale(1.038754,0.96269184)"
+       inkscape:export-filename="D:\GitHub\Tu-144D\Models\Tu-144D-cockpit\Instruments\GROZA\text9473.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan9471"
+         x="521.14362"
+         y="661.05896"
+         style="stroke-width:1.03875">Н</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24.9301px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;fill:#ffffff;fill-opacity:1;stroke-width:1.03875"
+       x="531.3349"
+       y="681.30396"
+       id="text29923"
+       transform="scale(1.038754,0.96269184)"
+       inkscape:export-filename="D:\GitHub\Tu-144D\Models\Tu-144D-cockpit\Instruments\GROZA\text9473.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan29921"
+         x="531.3349"
+         y="681.30396"
+         style="stroke-width:1.03875">А</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24.9301px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;fill:#ffffff;fill-opacity:1;stroke-width:1.03875"
+       x="536.61414"
+       y="704.39502"
+       id="text38539"
+       transform="scale(1.038754,0.96269184)"
+       inkscape:export-filename="D:\GitHub\Tu-144D\Models\Tu-144D-cockpit\Instruments\GROZA\text9473.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan38537"
+         x="536.61414"
+         y="704.39502"
+         style="stroke-width:1.03875">К</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24.9301px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;fill:#ffffff;fill-opacity:1;stroke-width:1.03875"
+       x="533.8598"
+       y="725.37451"
+       id="text42957"
+       transform="scale(1.038754,0.96269184)"
+       inkscape:export-filename="D:\GitHub\Tu-144D\Models\Tu-144D-cockpit\Instruments\GROZA\text9473.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan42955"
+         x="533.8598"
+         y="725.37451"
+         style="stroke-width:1.03875">Л</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24.9301px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;fill:#ffffff;fill-opacity:1;stroke-width:1.03875"
+       x="528.99365"
+       y="744.65546"
+       id="text48111"
+       transform="scale(1.038754,0.96269184)"
+       inkscape:export-filename="D:\GitHub\Tu-144D\Models\Tu-144D-cockpit\Instruments\GROZA\text9473.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan48109"
+         x="528.99365"
+         y="744.65546"
+         style="stroke-width:1.03875">О</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24.9301px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:0px;fill:#ffffff;fill-opacity:1;stroke-width:1.03875"
+       x="520.54681"
+       y="761.91644"
+       id="text51161"
+       transform="scale(1.038754,0.96269184)"
+       inkscape:export-filename="D:\GitHub\Tu-144D\Models\Tu-144D-cockpit\Instruments\GROZA\text9473.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan51159"
+         x="520.54681"
+         y="761.91644"
+         style="stroke-width:1.03875">Н</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;line-height:1.25;font-family:LENYA69;-inkscape-font-specification:LENYA69;letter-spacing:-10.12px;display:inline;fill:#ffffff;fill-opacity:1"
+       x="1380.2725"
+       y="666.0946"
+       id="text15253"><tspan
+         sodipodi:role="line"
+         id="tspan15251"
+         x="1380.2725"
+         y="666.0946">откл</tspan></text>
     <path
        style="display:inline;opacity:1;fill:none;stroke:#ffffff;stroke-width:2.7833;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 1245.2087,671.88139 v -53.34218 h 12.0196 c 0,0 12.4911,-0.54803 12.4911,8.76858 0,9.31662 0,16.80644 0,16.80644 0,0 0,10.77804 -12.4911,10.59536 -12.491,-0.18268 -12.2553,0 -12.2553,0"
